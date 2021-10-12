@@ -1,0 +1,83 @@
+*, *:before, *:after
+  box-sizing: border-box
+html
+  font-size: 14px
+body
+  font-family: 'Futura Book', sans-serif
+  font-size: 1rem
+img
+  max-width: 100%
+.section
+  padding: 50px 0
+  &_dark
+    background: $dark
+    color: $light
+  &_curlydark
+    background: $dark url('../img/bg-lines-light.png') no-repeat center  /cover
+    color: $light
+  &_curlylight
+    background: $light url('../img/bg-lines-dark.png') no-repeat center /cover
+  &-title
+    text-align: center      
+    // color: $dark-title 
+    &_left
+      text-align: left 
+    &_light
+      color: $light
+    &__subtitle
+      font-family: 'Futura Demi', sans-serif
+      font-size: 1.07rem
+      font-weight: normal
+      text-transform: uppercase
+    &__heading
+      font-family: 'Yeseva One', cursive
+      font-size: 1.425rem
+      text-transform: uppercase
+      font-weight: 400
+      line-height: 138.6%
+      margin: 0
+      &_primary
+        color: $primary 
+      &_big
+        font-size: 1.929rem 
+        letter-spacing: -0.07em
+    &__word
+      display: flex
+      align-items: center 
+      &::after
+        content: ''
+        width: 90px
+        height: 1px
+        background: $primary
+        margin-left: 2.4rem
+    &__text
+      font-size: 1.286rem
+      line-height: 2.07rem
+      max-width: 31.57rem
+      margin-top: 1.5rem
+      margin-bottom: 2rem
+    &__image
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 1rem
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        background: $primary
+        margin: 0 10px
+    &__description
+      margin: auto
+      margin-top: 1.27rem
+      font-size: 1.425rem
+      line-height: 135.84%
+      max-width: 52.93rem
+      &_limit
+        max-width: 25.71rem
+.xs-visible
+  display: none
+
+
+ 
+    
